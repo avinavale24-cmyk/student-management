@@ -1,0 +1,203 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: #173b70;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+.header h1 {
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.header p {
+    color: #e1eaff;
+}
+
+/* Main container */
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.form-section,
+.list-section {
+    background: white;
+    padding: 24px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #173b70;
+    margin-bottom: 20px;
+}
+
+/* Form */
+#studentForm {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.search-box {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccd3df;
+    border-radius: 6px;
+    font-size: 15px;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.search-box:focus {
+    outline: 2px solid #8ab4f8;
+    border-color: #2864b4;
+}
+
+/* Buttons */
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 14px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background: #2165b5;
+    align-self: end;
+    min-height: 42px;
+}
+
+.btn-primary:hover {
+    background: #174a88;
+}
+
+.btn-danger {
+    background: #dc3545;
+}
+
+.btn-danger:hover {
+    background: #b52231;
+}
+
+/* Student records */
+.summary {
+    display: inline-block;
+    background: #e8f1ff;
+    color: #173b70;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.search-box {
+    display: block;
+    margin-bottom: 18px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #e0e5ed;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: #173b70;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f5f8fc;
+}
+
+tbody tr:hover {
+    background: #eaf2ff;
+}
+
+.empty-message {
+    display: none;
+    text-align: center;
+    color: #777;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #173b70;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 650px) {
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 18px auto;
+    }
+
+    .form-section,
+    .list-section {
+        padding: 16px;
+    }
+
+    #studentForm {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+}
