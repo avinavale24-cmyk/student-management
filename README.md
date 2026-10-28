@@ -103,3 +103,4 @@ The Student Management System demonstrates basic web
 development concepts and practical Git and GitHub workflows,
 including repository initialization, commits, pushing changes,
 and cloning a repository.
+Version 1.0
